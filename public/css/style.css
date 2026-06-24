@@ -58,7 +58,7 @@ body{
 
 /* cards */
 
-.card {
+.listing-card {
     border:none !important;
     margin-bottom: 2rem;
 }
@@ -116,7 +116,6 @@ body{
     padding-left: 0;
     padding-right:0 ;
 }
-
 
 
 
