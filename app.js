@@ -25,9 +25,9 @@ const userRouter = require("./routes/user.js");
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
 const dbUrl = process.env.ATLASDB_URL;  // ✅ FIXED
-console.log("DB URL:", dbUrl);
-console.log("Cloud Name:", process.env.CLOUD_NAME);
-console.log("Cloud Key:", process.env.CLOUD_API_KEY); //2lineuper
+// console.log("DB URL:", dbUrl);
+// console.log("Cloud Name:", process.env.CLOUD_NAME);
+// console.log("Cloud Key:", process.env.CLOUD_API_KEY); //2lineuper
 
 main()
 .then(()=>{
@@ -123,6 +123,8 @@ app.get("/test", (req,res)=>{
 //     let registeredUser = await User.register(fakeUser, "helloworld");
 //     res.send(registeredUser);
 // });
+
+// render deployment check
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);

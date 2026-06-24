@@ -1,6 +1,6 @@
-console.log("Cloud Name =", process.env.CLOUD_NAME);
-console.log("Cloud Key =", process.env.CLOUD_API_KEY);
-console.log("Cloud Secret =", process.env.CLOUD_API_SECRET);
+// console.log("Cloud Name =", process.env.CLOUD_NAME);
+// console.log("Cloud Key =", process.env.CLOUD_API_KEY);
+// console.log("Cloud Secret =", process.env.CLOUD_API_SECRET);
 const cloudinary = require("cloudinary").v2;
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
 
