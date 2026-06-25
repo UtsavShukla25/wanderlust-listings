@@ -62,9 +62,9 @@ const store = MongoStore.create({
     touchAfter: 24 * 60 * 60,
 });
 
-store.on("error", (err) => {
-    console.log("SESSION STORE ERROR:", err);
-});
+// store.on("error", (err) => {
+//     console.log("SESSION STORE ERROR:", err);
+// });
 
 store.on("error",() =>{
     console.log("ERROR in MONGO SESSION STORE",err);
@@ -157,7 +157,12 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(8080, () => {
-    console.log("server is listening to port 8080");
+// app.listen(8080, () => {
+//     console.log("server is listening to port 8080");
 
+// });
+// YE LIKH DO REPLACE KARKE
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Server chal raha hai port ${PORT} pe`);
 });
